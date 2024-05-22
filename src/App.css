@@ -1,38 +1,105 @@
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* UserForm Styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container input, .form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container input:focus {
+  border-color: #007bff;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* UserList Styles */
+.user-list {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-list th, .user-list td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-list th {
+  background-color: #f2f2f2;
+}
+
+.user-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+.user-list button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.user-list .edit-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.user-list .delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.user-list .edit-button:hover {
+  background-color: #218838;
+}
+
+.user-list .delete-button:hover {
+  background-color: #c82333;
 }
