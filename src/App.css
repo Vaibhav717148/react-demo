@@ -1,13 +1,15 @@
 .App {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #e1f1ff;
   font-family: Arial, sans-serif;
 }
 
 h1 {
-  color: #333;
+  color: #200640;
   margin-bottom: 20px;
+  font-family: emoji;
+  font-weight: 700;
 }
 
 /* UserForm Styles */
@@ -23,7 +25,10 @@ h1 {
 .form-container label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  font-family: cursive;
 }
 
 .form-container input, .form-container button {
@@ -43,10 +48,12 @@ h1 {
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .form-container button:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* UserList Styles */
